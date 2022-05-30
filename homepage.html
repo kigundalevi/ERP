@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/home.css"/>
+</head>
+<body id="body2">
+    <div id="nav-main">
+
+        <div>
+            <h1><span style="font-size:30px;    background-color: limegreen;
+                border-radius: 15px;
+                text-decoration: none;
+                color:white;
+                padding: 5px;" >Double</span>cash</h1>
+        </div>
+    <div class="left-menu">
+        <div class="logoicon">
+            <img src="/download__3_-removebg-preview.png"/ width="50px" height="50px">
+            <div class="p">Level 0</div>
+        </div>
+        <button id="signout">sign out</button>
+    </div>
+    </div>
+    <div class="maincontainer">
+
+        <div class="main-card">
+                <div class="links">
+                    <h3>Total assets($)</h3>
+                    <p>2000$</p>
+                </div>
+                 <div class="links">
+                     <h3>yesterday earnings($)</h3>
+                     <p>300$</p>
+                 </div>
+                 <div class="links">
+                     <h3>income</h3>
+                     <p>150$</p>
+                 </div>
+                 <div class="links">
+                     <h3>Earnings</h3>
+                     <p>335$</p>
+                 </div>
+                 <div class="links">
+                    <a href="#">Withdraw</a>
+                    <a href="#">Recharge</a>
+                </div>
+    
+            </div>
+            <div class="line"></div>
+            <div class="main-icons">
+
+                <div class="icons">
+                    <img src="/icons/download__6_-removebg-preview.png"/>
+                    <p>Balance</p>
+                </div>
+                <div class="icons">
+                    <img src="/icons/download__5_-removebg-preview.png"/>
+                    <p>Referral</p>
+                </div>
+                <div class="icons">
+                    <img src="/icons/images/2618139-removebg-preview.png"/>
+                    <p>Bonus</p>
+                </div>
+                <div class="icons">
+                    <img src="/icons/images/images__1_-removebg-preview (1).png"/>
+                    <p>Renew</p>
+                </div>
+            </div>
+            <h1 style="text-align:center; color: limegreen;"><b>Our Global patners</b></h1>
+            <div class="partners">
+                <div class="images">
+                    <img src="/icons/images/alibaba_logo-removebg-preview.png">
+                </div>
+                <div class="images">
+                    <img src="/icons/images/amazon-removebg-preview.png">
+                </div>
+                <div class="images">
+                    <img src="/icons/images/ebay_logo-removebg-preview.png">
+                </div>
+                <div class="images">
+                    <!-- <img src="/icons/images/jumia-removebg-preview.png"> -->
+                </div>
+                <div class="images">
+                    <!-- <img src="/icons/images/Cgfyqu6UYAAg5Uc-removebg-preview.png"> -->
+                </div>
+                <div class="images">
+                    <img src="/icons/images/Wish-Logo.png">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="about" >
+            
+            <span style="background-color: limegreen; " >Double</span>cash CO aims at doubling our customers investments through several tasks available to all users depending on the subscription level.<br> These tasks are in collaboration with our major E-Commerce platforms. <br>Tasks include Order Grabbing which serves as the main task.<br> Rating products and services or E-Commerce Merchants, hence earning our users a commision. <br><br>
+              As we need more users for providing a pyramid structure rating, we urge our users to make referrals of atleast 4 persons in ten days to make their withdrawal. <br>
+              The Algorithm of our Company is designed to double a customers investment in exactly ten days, accounting for both parties. The algorthm also works in levels;<br>
+              <ul style="list-style: ;5px">
+                           <li>1. Level 0
+                           2. Level 1
+                           
+                           3. VIP 0
+                           4. VIP 1
+                           5. VIP 2
+                           6. VIP 3
+                           7. VIP 4
+                           8. VIP 5
+                           9. VIP 6
+                           10.VIP 7
+           
+                        </li></ul>
+            Earnings are different at different levels
+            
+        </div> -->
+        <script src="/app.js"/></script>
+        <script type="module">
+    
+    //Import the functions you need for the app 
+
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut
+    } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    import {getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+    
+    
+    // Your web app's Firebase configuration
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyAlwKOL5aQklkhBvX4pf_Sihg8utkBBXs8",
+        authDomain: "doublecash-7bc8b.firebaseapp.com",
+        projectId: "doublecash-7bc8b",
+        storageBucket: "doublecash-7bc8b.appspot.com",
+        messagingSenderId: "916452622402",
+        appId: "1:916452622402:web:f54f911039ebc89b442ddb",
+        measurementId: "G-TF8HRHJT5J"
+      };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const database = getDatabase(app);
+    
+    signout.addEventListener('click', (e) => {
+    
+    signOut(auth).then(() => {
+           // Sign-out successful.
+           alert('signout success')
+           window.location.replace('index.html')
+    }).catch((error) => {
+        // An error happened.
+    });
+    });
+    
+    </script>
+    </body>
+</html>
+

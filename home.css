@@ -1,0 +1,230 @@
+body{
+    margin:0;
+    font-family: "poppins" ,sans-serif;
+    background-color:rgb(29, 212, 29);
+}
+#body2{
+    background-color:whitesmoke;
+    /* padding-top: 70px; */
+}
+.homecontainer{
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+    width:25%;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.home-btn{
+    cursor: pointer;
+    padding: 12px 14px;
+    background-color:rgb(29, 212, 29);
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+input[type=text], input[type=password]{
+    padding: 12px 20px;
+    margin:auto ;
+    border-radius: 15px;
+    border: none;
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+
+}
+.modal {
+  position: relative;
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  .modal-content {
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .container{
+      /* padding: 20px; */
+      margin:20px;
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+  }
+  .close{
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+  }
+  .close:hover,
+  .close:focus{
+      color: red;
+      cursor: pointer;
+
+  }
+  .cancelbtn{
+      background-color:tomato;
+      padding:12px 14px;
+      border-radius: 15px;
+      border:none;
+  }
+  .psw{
+    float: right;
+    padding-top: 16px;
+  }
+  /* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  @media  screen and (max-width:720px) {
+    .homecontainer{
+      padding: 50px;
+    }
+  }
+  /* main page styling  */
+  .maincontainer{
+    /* width: 80%; */
+  }
+  #nav-main{
+    display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  margin-bottom: 50px; 
+  background-color: #fefefe;
+  top: 0;
+  z-index: 1;
+  
+  }
+  .main-card{
+    background-color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.22);
+  }
+  .links a{
+    background-color: limegreen;
+    border-radius: 15px;
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    /* background-color: #888; */
+
+  }
+  .links p{
+    font-weight: bold;
+  }
+  .links h3{
+    color:limegreen;
+  }
+  .line{
+    width: 80%;
+    height: 2px;
+    background-color: limegreen;
+    border: 2px solid limegreen;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .icons img{
+     width: 80px;
+     border-radius: 15px;
+  }
+  .main-icons{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fefefe;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.22);
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+
+  }
+  .icons{
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+   .icons p ,.p{
+    color: limegreen;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .partners{
+    display:flex;
+    /* align-items: center; */
+    position: absolute;
+    margin-left: 250px;
+  }
+  .images img{
+    width:200px;
+  }
+  .about{
+    margin-top: 20%;
+  }
+  #signout{
+    background-color: limegreen;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  .left-menu{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
